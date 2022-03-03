@@ -25,11 +25,17 @@ ActiveRecord::Schema.define(version: 2022_02_16_133621) do
   create_table "order_items", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.integer "quantity"
     t.integer "item_price"
+    t.bigint "product_id"
+    t.bigint "order_id"
+    t.index ["order_id"], name: "index_order_items_on_order_id"
+    t.index ["product_id"], name: "index_order_items_on_product_id"
   end
 
   create_table "orders", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
     t.timestamp "created_at"
     t.timestamp "shipped_at"
+    t.bigint "client_id"
+    t.index ["client_id"], name: "index_orders_on_client_id"
   end
 
   create_table "products", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
