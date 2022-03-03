@@ -1,0 +1,6 @@
+development:
+  adapter: mysql2
+  host: 10.229.33.32
+  username: abt
+  password: root
+  database: poo1_2021_shop

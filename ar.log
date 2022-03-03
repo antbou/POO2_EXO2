@@ -1,0 +1,37 @@
+# Logfile created on 2022-03-03 08:42:00 +0100 by logger.rb/v1.4.3
+D, [2022-03-03T08:53:44.622551 #5607] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-03T08:53:44.623684 #5607] DEBUG -- :   Category Create (0.5ms)  INSERT INTO `categories` (`name`) VALUES ('PCR')
+D, [2022-03-03T08:53:44.629349 #5607] DEBUG -- :   TRANSACTION (4.3ms)  COMMIT
+D, [2022-03-03T08:53:44.630891 #5607] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-03T08:53:44.632380 #5607] DEBUG -- :   Category Create (1.0ms)  INSERT INTO `categories` (`name`) VALUES ('SUP')
+D, [2022-03-03T08:53:44.636391 #5607] DEBUG -- :   TRANSACTION (3.3ms)  COMMIT
+D, [2022-03-03T08:55:38.722936 #5700] DEBUG -- :   TRANSACTION (0.3ms)  BEGIN
+D, [2022-03-03T08:55:38.723885 #5700] DEBUG -- :   Category Create (0.5ms)  INSERT INTO `categories` (`name`) VALUES ('PCR')
+D, [2022-03-03T08:55:38.729637 #5700] DEBUG -- :   TRANSACTION (3.9ms)  COMMIT
+D, [2022-03-03T08:55:38.730835 #5700] DEBUG -- :   TRANSACTION (0.3ms)  BEGIN
+D, [2022-03-03T08:55:38.731660 #5700] DEBUG -- :   Category Create (0.4ms)  INSERT INTO `categories` (`name`) VALUES ('SUP')
+D, [2022-03-03T08:55:38.735740 #5700] DEBUG -- :   TRANSACTION (3.6ms)  COMMIT
+D, [2022-03-03T09:01:57.334102 #5826] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-03T09:01:57.335333 #5826] DEBUG -- :   Category Create (0.6ms)  INSERT INTO `categories` (`name`) VALUES ('PCR')
+D, [2022-03-03T09:01:57.340416 #5826] DEBUG -- :   TRANSACTION (3.8ms)  COMMIT
+D, [2022-03-03T09:01:57.341813 #5826] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-03T09:01:57.343385 #5826] DEBUG -- :   Category Create (1.1ms)  INSERT INTO `categories` (`name`) VALUES ('SUP')
+D, [2022-03-03T09:01:57.347614 #5826] DEBUG -- :   TRANSACTION (3.7ms)  COMMIT
+D, [2022-03-03T09:01:57.360571 #5826] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-03T09:01:57.361622 #5826] DEBUG -- :   Product Create (0.5ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('apple', 2, 'Little apple', 1)
+D, [2022-03-03T09:01:57.366045 #5826] DEBUG -- :   TRANSACTION (3.8ms)  COMMIT
+D, [2022-03-03T09:01:57.367445 #5826] DEBUG -- :   TRANSACTION (0.3ms)  BEGIN
+D, [2022-03-03T09:01:57.368488 #5826] DEBUG -- :   Product Create (0.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('lemon', 6, 'Big lemon', 1)
+D, [2022-03-03T09:01:57.372686 #5826] DEBUG -- :   TRANSACTION (3.6ms)  COMMIT
+D, [2022-03-03T09:01:57.374451 #5826] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-03T09:01:57.375529 #5826] DEBUG -- :   Product Create (0.5ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('limousine', 25, 'A limousine', 2)
+D, [2022-03-03T09:01:57.379580 #5826] DEBUG -- :   TRANSACTION (3.4ms)  COMMIT
+D, [2022-03-03T09:01:57.381053 #5826] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-03T09:01:57.382104 #5826] DEBUG -- :   Product Create (0.5ms)  INSERT INTO `products` (`name`, `price`, `description`, `category_id`) VALUES ('truck', 200, 'A truck', 2)
+D, [2022-03-03T09:01:57.388525 #5826] DEBUG -- :   TRANSACTION (5.8ms)  COMMIT
+D, [2022-03-03T09:01:57.396066 #5826] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-03T09:01:57.397267 #5826] DEBUG -- :   Client Create (0.6ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('yannick', 'baudraz')
+D, [2022-03-03T09:01:57.404751 #5826] DEBUG -- :   TRANSACTION (6.8ms)  COMMIT
+D, [2022-03-03T09:01:57.406278 #5826] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-03T09:01:57.407373 #5826] DEBUG -- :   Client Create (0.5ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('john', 'doedoe')
+D, [2022-03-03T09:01:57.411546 #5826] DEBUG -- :   TRANSACTION (3.6ms)  COMMIT
