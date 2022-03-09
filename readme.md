@@ -1,7 +1,15 @@
 ## Install
 
+```bash
 bundle install
 rake db:migrate
+```
+
+IRB
+```bash
+require_relative 'connection'
+require_relative 'models'
+```
 
 Ex 2: E-Commerce
 ================
