@@ -5,4 +5,8 @@ class Order < ActiveRecord::Base
 
   validates :order_items, :client, presence: true
   validates_associated :order_items
+
+  def price
+    order_items.sum(&:total_price)
+  end
 end

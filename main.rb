@@ -27,3 +27,10 @@ puts orderTest.order_items.build(product: Product.first).save
 
 puts "\nTest de validation 5"
 puts orderTest.order_items.build(quantity: 200, item_price: Product.first.price, product: Product.first)
+
+order1 = client.orders.create(order_items: [
+  OrderItem.new(quantity: 2, product: Product.find(1)),
+  OrderItem.new(quantity: 2,  product: Product.find(3)),
+])
+
+puts order1.total_price
