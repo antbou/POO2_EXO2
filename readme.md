@@ -3,6 +3,7 @@
 ```bash
 bundle install
 rake db:migrate
+rake db:new_migration name=AddColumnTypeToClients
 ```
 
 IRB

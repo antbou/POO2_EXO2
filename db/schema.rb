@@ -10,19 +10,20 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_02_16_133621) do
+ActiveRecord::Schema.define(version: 2022_03_17_073459) do
 
-  create_table "categories", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
+  create_table "categories", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.string "description"
   end
 
-  create_table "clients", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
+  create_table "clients", charset: "utf8mb4", force: :cascade do |t|
+    t.string "type"
     t.string "firstname"
     t.string "lastname"
   end
 
-  create_table "order_items", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
+  create_table "order_items", charset: "utf8mb4", force: :cascade do |t|
     t.integer "quantity"
     t.integer "item_price"
     t.bigint "product_id"
@@ -31,14 +32,14 @@ ActiveRecord::Schema.define(version: 2022_02_16_133621) do
     t.index ["product_id"], name: "index_order_items_on_product_id"
   end
 
-  create_table "orders", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
+  create_table "orders", charset: "utf8mb4", force: :cascade do |t|
     t.timestamp "created_at"
     t.timestamp "shipped_at"
     t.bigint "client_id"
     t.index ["client_id"], name: "index_orders_on_client_id"
   end
 
-  create_table "products", charset: "utf8mb4", collation: "utf8mb4_unicode_ci", force: :cascade do |t|
+  create_table "products", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
     t.integer "price"
     t.string "description"

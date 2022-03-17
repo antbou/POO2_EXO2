@@ -10,7 +10,8 @@ product3 = Product.create!(name: 'limousine', price: 25.95, description: 'A limo
 product4 = Product.create!(name: 'truck', price: 200, description: 'A truck', category: sup)
 
 client = Client.create!(firstname: 'Anthony', lastname: 'Bouillant')
-Client.create!(firstname: 'john', lastname: 'doedoe')
+Individual.create!(firstname: 'john', lastname: 'doedoe', type: 'Individual')
+Company.create!(firstname: 'john', lastname: 'doedoe', type: 'Company')
 
 order1 = client.orders.create(order_items: [
   OrderItem.new(quantity: 2, item_price: product1.price, product: product1),
