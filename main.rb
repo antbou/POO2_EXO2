@@ -4,4 +4,4 @@ require_relative 'models'
 
 
 
-puts Individual.all
+puts Supplier.find(1).categories

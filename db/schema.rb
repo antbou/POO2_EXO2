@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_17_073459) do
+ActiveRecord::Schema.define(version: 2022_03_17_090820) do
 
   create_table "categories", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
@@ -44,7 +44,14 @@ ActiveRecord::Schema.define(version: 2022_03_17_073459) do
     t.integer "price"
     t.string "description"
     t.bigint "category_id"
+    t.bigint "supplier_id"
     t.index ["category_id"], name: "index_products_on_category_id"
+    t.index ["supplier_id"], name: "index_products_on_supplier_id"
+  end
+
+  create_table "suppliers", charset: "utf8mb4", force: :cascade do |t|
+    t.string "name"
+    t.string "email"
   end
 
 end

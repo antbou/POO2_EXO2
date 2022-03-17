@@ -4,10 +4,13 @@ require_relative 'models'
 pcr = Category.create!(name: 'PCR')
 sup = Category.create!(name: 'SUP')
 
-product1 = Product.create!(name: 'apple', price: 2.35, description: 'Little apple', category: pcr)
-product2 = Product.create!(name: 'lemon', price: 6.15, description: 'Big lemon', category: pcr)
-product3 = Product.create!(name: 'limousine', price: 25.95, description: 'A limousine', category: sup)
-product4 = Product.create!(name: 'truck', price: 200, description: 'A truck', category: sup)
+st = Supplier.create!(name: 'Technique', email: 'technique@gmail.com')
+sm = Supplier.create!(name: 'Michel', email: 'michel@gmail.com')
+
+product1 = Product.create!(name: 'apple', price: 2.35, description: 'Little apple', category: pcr, supplier: st)
+product2 = Product.create!(name: 'lemon', price: 6.15, description: 'Big lemon', category: pcr, supplier: sm)
+product3 = Product.create!(name: 'limousine', price: 25.95, description: 'A limousine', category: sup, supplier: st)
+product4 = Product.create!(name: 'truck', price: 200, description: 'A truck', category: sup, supplier: sm)
 
 client = Client.create!(firstname: 'Anthony', lastname: 'Bouillant')
 Individual.create!(firstname: 'john', lastname: 'doedoe')
