@@ -4,6 +4,7 @@
 bundle install
 rake db:migrate
 rake db:new_migration name=AddColumnTypeToClients
+rake db:migrate:reset
 ```
 
 IRB

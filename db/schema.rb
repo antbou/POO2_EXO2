@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_03_17_090820) do
+ActiveRecord::Schema.define(version: 2022_03_17_092845) do
 
   create_table "categories", charset: "utf8mb4", force: :cascade do |t|
     t.string "name"
@@ -21,6 +21,15 @@ ActiveRecord::Schema.define(version: 2022_03_17_090820) do
     t.string "type"
     t.string "firstname"
     t.string "lastname"
+  end
+
+  create_table "comments", charset: "utf8mb4", force: :cascade do |t|
+    t.string "content"
+    t.bigint "author_id"
+    t.string "target_type"
+    t.bigint "target_id"
+    t.index ["author_id"], name: "index_comments_on_author_id"
+    t.index ["target_type", "target_id"], name: "index_comments_on_target"
   end
 
   create_table "order_items", charset: "utf8mb4", force: :cascade do |t|
@@ -54,4 +63,5 @@ ActiveRecord::Schema.define(version: 2022_03_17_090820) do
     t.string "email"
   end
 
+  add_foreign_key "comments", "clients", column: "author_id"
 end
