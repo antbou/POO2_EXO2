@@ -4,4 +4,14 @@ class Category < ActiveRecord::Base
   def to_s
     "#{name}"
   end
+
+  def self.no_need
+    arr = []
+    self.all.each do |category|
+      if (category.products.count == 0)
+        arr.push(category)
+      end
+    end
+    return arr
+  end
 end
