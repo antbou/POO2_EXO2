@@ -2103,3 +2103,194 @@ D, [2022-03-24T09:04:05.976716 #932] DEBUG -- :   Supplier Load (0.6ms)  SELECT 
 D, [2022-03-24T09:04:05.986910 #932] DEBUG -- :   TRANSACTION (0.3ms)  BEGIN
 D, [2022-03-24T09:04:05.987900 #932] DEBUG -- :   Product Create (0.5ms)  INSERT INTO `products` (`name`, `price`, `description`, `inventory`, `category_id`, `supplier_id`) VALUES ('Wesh', 200, 'A Wesh', 3, 1, 1)
 D, [2022-03-24T09:04:05.992791 #932] DEBUG -- :   TRANSACTION (4.2ms)  COMMIT
+D, [2022-03-24T10:00:32.692371 #968] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:00:50.493229 #999] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:01:14.922700 #1030] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:01:33.587676 #1061] DEBUG -- :   Order Load (0.8ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:04:54.162828 #1123] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:05:05.532458 #1154] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:06:17.439692 #1185] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:06:29.868008 #1216] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:06:53.716634 #1247] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:06:53.740376 #1247] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1 /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:07:27.085540 #1278] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:07:42.057422 #1309] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:07:48.980635 #1340] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:08:04.960541 #1371] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:08:04.986086 #1371] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:08:04.991549 #1371] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:08:28.368118 #1402] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:08:28.395926 #1402] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:08:28.400749 #1402] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:10:17.717081 #1464] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:10:17.742342 #1464] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:10:17.747518 #1464] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:11:07.809929 #1495] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:11:07.834431 #1495] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:11:07.840011 #1495] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:11:57.397973 #1526] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:11:57.421868 #1526] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:11:57.427652 #1526] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:12:10.209776 #1557] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:12:10.234228 #1557] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:12:10.239609 #1557] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:12:46.633659 #1588] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:12:46.657124 #1588] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:12:46.662583 #1588] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:12:56.991272 #1619] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:12:57.015604 #1619] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:12:57.020591 #1619] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:13:14.501337 #1650] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:14.516170 #1650] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:14.530338 #1650] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:13:14.535675 #1650] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:13:20.559164 #1681] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:13:26.953997 #1712] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:26.968157 #1712] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:26.982219 #1712] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:13:26.987888 #1712] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:13:49.654562 #1743] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:49.669542 #1743] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:49.683911 #1743] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:13:49.688945 #1743] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:13:49.690084 #1743] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:13:49.691394 #1743] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:13:49.693923 #1743] DEBUG -- :   OrderItem Load (1.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:14:13.991528 #1774] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:14:14.007538 #1774] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:14:14.021383 #1774] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:14:14.027163 #1774] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:14:14.028651 #1774] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:14:14.030598 #1774] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:14:14.032558 #1774] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:15:11.182339 #1805] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:15:23.956062 #1836] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:15:32.664800 #1867] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders` /* loading for inspect */ LIMIT 11
+D, [2022-03-24T10:16:48.719560 #1898] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:16:48.734313 #1898] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:16:48.748858 #1898] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:16:48.753526 #1898] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:16:48.754459 #1898] DEBUG -- :   Order Load (0.3ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:16:48.755723 #1898] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:16:48.757034 #1898] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:17.658075 #1929] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:17.673456 #1929] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:17.686746 #1929] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:17.692089 #1929] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:17.693779 #1929] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:17.695668 #1929] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:17.697903 #1929] DEBUG -- :   OrderItem Load (1.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:30.859639 #1960] DEBUG -- :   Product Load (0.7ms)  SELECT `products`.* FROM `products`
+D, [2022-03-24T10:17:30.875125 #1960] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:30.897247 #1960] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:30.902574 #1960] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:30.903921 #1960] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:30.905262 #1960] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:30.906634 #1960] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:50.585787 #1991] DEBUG -- :   Product Load (0.7ms)  SELECT `products`.* FROM `products`
+D, [2022-03-24T10:17:50.601642 #1991] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:50.622922 #1991] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:50.629758 #1991] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:50.631134 #1991] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:50.632327 #1991] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:50.633580 #1991] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:59.727340 #2022] DEBUG -- :   Order Load (0.4ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:59.741845 #2022] DEBUG -- :   Order Load (0.4ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:59.753652 #2022] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:59.758431 #2022] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:17:59.759992 #2022] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:17:59.761387 #2022] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:17:59.763632 #2022] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:13.018210 #2053] DEBUG -- :   Order Load (0.4ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:13.043119 #2053] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:13.048389 #2053] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:13.049816 #2053] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:13.051246 #2053] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:13.052762 #2053] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:13.054118 #2053] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:13.055946 #2053] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:13.057668 #2053] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:28.018230 #2084] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:28.042065 #2084] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:28.047409 #2084] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:28.048873 #2084] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:28.050363 #2084] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:28.051785 #2084] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:56.956431 #2115] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:56.983240 #2115] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:18:56.988773 #2115] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:56.990227 #2115] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:18:56.991778 #2115] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:18:56.993522 #2115] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:20:20.683434 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.684816 #2148] DEBUG -- :   Category Create (0.7ms)  INSERT INTO `categories` (`name`) VALUES ('PCR')
+D, [2022-03-24T10:20:20.690702 #2148] DEBUG -- :   TRANSACTION (4.6ms)  COMMIT
+D, [2022-03-24T10:20:20.692328 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.693640 #2148] DEBUG -- :   Category Create (0.7ms)  INSERT INTO `categories` (`name`) VALUES ('SUP')
+D, [2022-03-24T10:20:20.697901 #2148] DEBUG -- :   TRANSACTION (3.6ms)  COMMIT
+D, [2022-03-24T10:20:20.705918 #2148] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-24T10:20:20.707044 #2148] DEBUG -- :   Supplier Create (0.5ms)  INSERT INTO `suppliers` (`name`, `email`) VALUES ('Technique', 'technique@gmail.com')
+D, [2022-03-24T10:20:20.714258 #2148] DEBUG -- :   TRANSACTION (6.7ms)  COMMIT
+D, [2022-03-24T10:20:20.715594 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.716581 #2148] DEBUG -- :   Supplier Create (0.5ms)  INSERT INTO `suppliers` (`name`, `email`) VALUES ('Michel', 'michel@gmail.com')
+D, [2022-03-24T10:20:20.720626 #2148] DEBUG -- :   TRANSACTION (3.4ms)  COMMIT
+D, [2022-03-24T10:20:20.732678 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.733952 #2148] DEBUG -- :   Product Create (0.7ms)  INSERT INTO `products` (`name`, `price`, `description`, `inventory`, `category_id`, `supplier_id`) VALUES ('apple', 2, 'Little apple', 10, 3, 3)
+D, [2022-03-24T10:20:20.738819 #2148] DEBUG -- :   TRANSACTION (4.2ms)  COMMIT
+D, [2022-03-24T10:20:20.740575 #2148] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-24T10:20:20.741683 #2148] DEBUG -- :   Product Create (0.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `inventory`, `category_id`, `supplier_id`) VALUES ('lemon', 6, 'Big lemon', 3, 3, 4)
+D, [2022-03-24T10:20:20.745671 #2148] DEBUG -- :   TRANSACTION (3.3ms)  COMMIT
+D, [2022-03-24T10:20:20.747221 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.748279 #2148] DEBUG -- :   Product Create (0.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `inventory`, `category_id`, `supplier_id`) VALUES ('limousine', 25, 'A limousine', 15, 4, 3)
+D, [2022-03-24T10:20:20.753009 #2148] DEBUG -- :   TRANSACTION (3.8ms)  COMMIT
+D, [2022-03-24T10:20:20.754771 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.755865 #2148] DEBUG -- :   Product Create (0.6ms)  INSERT INTO `products` (`name`, `price`, `description`, `inventory`, `category_id`, `supplier_id`) VALUES ('truck', 200, 'A truck', 7, 4, 4)
+D, [2022-03-24T10:20:20.760928 #2148] DEBUG -- :   TRANSACTION (4.6ms)  COMMIT
+D, [2022-03-24T10:20:20.769666 #2148] DEBUG -- :   TRANSACTION (0.3ms)  BEGIN
+D, [2022-03-24T10:20:20.770865 #2148] DEBUG -- :   Client Create (0.6ms)  INSERT INTO `clients` (`firstname`, `lastname`) VALUES ('Anthony', 'Bouillant')
+D, [2022-03-24T10:20:20.775257 #2148] DEBUG -- :   TRANSACTION (3.7ms)  COMMIT
+D, [2022-03-24T10:20:20.779293 #2148] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-24T10:20:20.780849 #2148] DEBUG -- :   Individual Create (0.8ms)  INSERT INTO `clients` (`type`, `firstname`, `lastname`) VALUES ('Individual', 'john', 'doedoe')
+D, [2022-03-24T10:20:20.785126 #2148] DEBUG -- :   TRANSACTION (3.5ms)  COMMIT
+D, [2022-03-24T10:20:20.788555 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.789610 #2148] DEBUG -- :   Company Create (0.6ms)  INSERT INTO `clients` (`type`, `firstname`, `lastname`) VALUES ('Company', 'Michel', 'Technique')
+D, [2022-03-24T10:20:20.794030 #2148] DEBUG -- :   TRANSACTION (3.8ms)  COMMIT
+D, [2022-03-24T10:20:20.818570 #2148] DEBUG -- :   TRANSACTION (0.5ms)  BEGIN
+D, [2022-03-24T10:20:20.819714 #2148] DEBUG -- :   Order Create (0.5ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2022-03-24 09:20:20', 4)
+D, [2022-03-24T10:20:20.821257 #2148] DEBUG -- :   OrderItem Create (0.5ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (2, 2, 7, 3)
+D, [2022-03-24T10:20:20.822637 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (125, 25, 9, 3)
+D, [2022-03-24T10:20:20.823768 #2148] DEBUG -- :   OrderItem Create (0.3ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (3, 200, 10, 3)
+D, [2022-03-24T10:20:20.830336 #2148] DEBUG -- :   TRANSACTION (6.1ms)  COMMIT
+D, [2022-03-24T10:20:20.832894 #2148] DEBUG -- :   Client Load (0.8ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 2 LIMIT 1
+D, [2022-03-24T10:20:20.835340 #2148] DEBUG -- :   TRANSACTION (0.4ms)  BEGIN
+D, [2022-03-24T10:20:20.836483 #2148] DEBUG -- :   Order Create (0.6ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2022-03-24 09:20:20', 2)
+D, [2022-03-24T10:20:20.837685 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (2, 2, 7, 4)
+D, [2022-03-24T10:20:20.838913 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (3, 200, 10, 4)
+D, [2022-03-24T10:20:20.843039 #2148] DEBUG -- :   TRANSACTION (3.7ms)  COMMIT
+D, [2022-03-24T10:20:20.844211 #2148] DEBUG -- :   Client Load (0.5ms)  SELECT `clients`.* FROM `clients` WHERE `clients`.`id` = 2 LIMIT 1
+D, [2022-03-24T10:20:20.846219 #2148] DEBUG -- :   TRANSACTION (0.2ms)  BEGIN
+D, [2022-03-24T10:20:20.847155 #2148] DEBUG -- :   Order Create (0.5ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2022-03-24 09:20:20', 2)
+D, [2022-03-24T10:20:20.848498 #2148] DEBUG -- :   OrderItem Create (0.5ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (1, 2, 7, 5)
+D, [2022-03-24T10:20:20.849686 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (1, 6, 8, 5)
+D, [2022-03-24T10:20:20.853839 #2148] DEBUG -- :   TRANSACTION (3.6ms)  COMMIT
+D, [2022-03-24T10:20:20.855808 #2148] DEBUG -- :   TRANSACTION (0.3ms)  BEGIN
+D, [2022-03-24T10:20:20.856787 #2148] DEBUG -- :   Order Create (0.5ms)  INSERT INTO `orders` (`created_at`, `client_id`) VALUES ('2022-03-24 09:20:20', 4)
+D, [2022-03-24T10:20:20.858260 #2148] DEBUG -- :   OrderItem Create (0.5ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (1, 2, 7, 6)
+D, [2022-03-24T10:20:20.859416 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (75, 6, 8, 6)
+D, [2022-03-24T10:20:20.860699 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (3, 25, 9, 6)
+D, [2022-03-24T10:20:20.861869 #2148] DEBUG -- :   OrderItem Create (0.4ms)  INSERT INTO `order_items` (`quantity`, `item_price`, `product_id`, `order_id`) VALUES (200, 200, 10, 6)
+D, [2022-03-24T10:20:20.865966 #2148] DEBUG -- :   TRANSACTION (3.5ms)  COMMIT
+D, [2022-03-24T10:20:36.934454 #2179] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:20:36.960794 #2179] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:20:36.966113 #2179] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:20:36.967877 #2179] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
+D, [2022-03-24T10:20:36.969931 #2179] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2022-03-24T10:20:36.971825 #2179] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+D, [2022-03-24T10:20:36.973622 #2179] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+D, [2022-03-24T10:20:36.975438 #2179] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-24T10:20:36.977366 #2179] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-24T10:20:36.978934 #2179] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-24T10:20:36.981056 #2179] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
+D, [2022-03-24T10:20:36.983041 #2179] DEBUG -- :   OrderItem Load (0.9ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2022-03-24T10:20:36.984652 #2179] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+D, [2022-03-24T10:20:36.985872 #2179] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6

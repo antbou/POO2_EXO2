@@ -22,6 +22,16 @@ order1 = client.orders.create(order_items: [
   OrderItem.new(quantity: 3, item_price: product4.price, product: product4)
 ])
 
+Client.find(2).orders.create(order_items: [
+  OrderItem.new(quantity: 2, item_price: product1.price, product: product1),
+  OrderItem.new(quantity: 3, item_price: product4.price, product: product4)
+])
+
+Client.find(2).orders.create(order_items: [
+  OrderItem.new(quantity: 1, item_price: product1.price, product: product1),
+  OrderItem.new(quantity: 1, item_price: product2.price, product: product2)
+])
+
 
 order2 = Order.new()
 order2.order_items << [
