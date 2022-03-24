@@ -1,13 +1,11 @@
 require_relative 'connection'
 require_relative 'models'
 
-user = Client.first
-supplier = Supplier.first
-some_comment = Comment.create(content: 'test', target: supplier)
-user.comments << some_comment
+product1 = Product.first
+product2 = Product.find(2)
 
-product = Product.first
-product.comments.create(content:'bonjour',author: user)
+product4 = Product.create!(name: 'Wesh', price: 200, description: 'A Wesh', inventory: 3, category: Category.first, supplier: Supplier.first)
 
-puts user.comments
+product1.inventory = 3
+product1.save
 # puts Supplier.find(1).categories
