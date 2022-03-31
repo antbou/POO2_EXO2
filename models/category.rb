@@ -9,7 +9,7 @@ class Category < ActiveRecord::Base
     arr = []
     self.all.each do |category|
       if (category.products.count == 0)
-        arr.push(category)
+        arr << category
       end
     end
     return arr

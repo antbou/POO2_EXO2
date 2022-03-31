@@ -1,124 +1,52 @@
-D, [2022-03-24T10:31:32.070195 #2649] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:32:03.099253 #2680] DEBUG -- :   Category Load (0.7ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:32:03.125788 #2680] DEBUG -- :   Product Load (0.7ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 1
-D, [2022-03-24T10:32:03.131270 #2680] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 2
-D, [2022-03-24T10:32:03.132679 #2680] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 3
-D, [2022-03-24T10:32:03.133870 #2680] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 4
-D, [2022-03-24T10:32:03.135069 #2680] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 6
-D, [2022-03-24T10:32:22.547113 #2711] DEBUG -- :   Category Load (0.6ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:32:22.572830 #2711] DEBUG -- :   Product Load (0.8ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 1
-D, [2022-03-24T10:32:22.579058 #2711] DEBUG -- :   Product Load (0.8ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 2
-D, [2022-03-24T10:32:22.581452 #2711] DEBUG -- :   Product Load (0.8ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 3
-D, [2022-03-24T10:32:22.583535 #2711] DEBUG -- :   Product Load (0.7ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 4
-D, [2022-03-24T10:32:22.585252 #2711] DEBUG -- :   Product Load (0.5ms)  SELECT `products`.* FROM `products` WHERE `products`.`category_id` = 6
-D, [2022-03-24T10:32:58.673794 #2742] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:35:27.885182 #2773] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:35:36.913176 #2804] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:37:35.325095 #2835] DEBUG -- :   Category Load (0.6ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:37:35.350045 #2835] DEBUG -- :    (0.8ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 1
-D, [2022-03-24T10:37:35.351963 #2835] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 2
-D, [2022-03-24T10:37:35.353985 #2835] DEBUG -- :    (0.8ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 3
-D, [2022-03-24T10:37:35.355751 #2835] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 4
-D, [2022-03-24T10:37:35.357190 #2835] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 6
-D, [2022-03-24T10:38:55.881198 #2866] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:38:55.905803 #2866] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:38:55.911405 #2866] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:38:55.913522 #2866] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:38:55.915621 #2866] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:38:55.917877 #2866] DEBUG -- :   OrderItem Load (0.9ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:38:55.920413 #2866] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:38:55.921874 #2866] DEBUG -- :   Order Load (0.5ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:38:55.923514 #2866] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:38:55.925023 #2866] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:38:55.926348 #2866] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:38:55.928241 #2866] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:38:55.929996 #2866] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:38:55.931982 #2866] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:39:26.017898 #2897] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:39:26.042077 #2897] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:39:26.047402 #2897] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:39:26.049503 #2897] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:39:26.051466 #2897] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:39:26.053708 #2897] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:39:26.056760 #2897] DEBUG -- :   OrderItem Load (1.1ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:39:26.059059 #2897] DEBUG -- :   Order Load (0.9ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:39:26.060977 #2897] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:39:26.063088 #2897] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:39:26.065119 #2897] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:39:26.067241 #2897] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:39:26.068988 #2897] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:39:26.070346 #2897] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:39:49.244276 #2928] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:39:49.267706 #2928] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:39:49.273757 #2928] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:39:49.275867 #2928] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:39:49.277436 #2928] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:39:49.279312 #2928] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:39:49.281171 #2928] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:39:49.282602 #2928] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:39:49.284822 #2928] DEBUG -- :   OrderItem Load (0.9ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:39:49.286652 #2928] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:39:49.288029 #2928] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:39:49.289429 #2928] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:39:49.290736 #2928] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:39:49.291961 #2928] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:40:10.952056 #2959] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:40:10.977834 #2959] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:40:10.983372 #2959] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:40:10.985476 #2959] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:40:10.987593 #2959] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:40:10.990227 #2959] DEBUG -- :   OrderItem Load (0.9ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:40:10.992569 #2959] DEBUG -- :   OrderItem Load (1.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:40:10.994269 #2959] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:40:10.996164 #2959] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:40:10.998024 #2959] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:40:11.000519 #2959] DEBUG -- :   OrderItem Load (1.0ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:40:11.002099 #2959] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:40:11.003238 #2959] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:40:11.004495 #2959] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:40:11.006118 #2959] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:40:11.021383 #2959] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 1
-D, [2022-03-24T10:40:11.022843 #2959] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 2
-D, [2022-03-24T10:40:11.024119 #2959] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 3
-D, [2022-03-24T10:40:11.025412 #2959] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 4
-D, [2022-03-24T10:40:11.026457 #2959] DEBUG -- :    (0.3ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 6
-D, [2022-03-24T10:41:03.732685 #2990] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:41:03.757554 #2990] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:41:03.763003 #2990] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:41:03.764790 #2990] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:41:03.766753 #2990] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:41:03.769015 #2990] DEBUG -- :   OrderItem Load (0.9ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:41:03.771378 #2990] DEBUG -- :   OrderItem Load (0.9ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:41:03.772785 #2990] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:41:03.774068 #2990] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:41:03.775319 #2990] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:41:03.776929 #2990] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:41:03.778639 #2990] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:41:03.780264 #2990] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:41:03.781824 #2990] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:41:03.784271 #2990] DEBUG -- :   Category Load (1.1ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:41:03.799542 #2990] DEBUG -- :    (0.9ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 1
-D, [2022-03-24T10:41:03.801390 #2990] DEBUG -- :    (0.7ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 2
-D, [2022-03-24T10:41:03.802666 #2990] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 3
-D, [2022-03-24T10:41:03.803867 #2990] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 4
-D, [2022-03-24T10:41:03.805028 #2990] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 6
-D, [2022-03-24T10:41:31.259890 #3021] DEBUG -- :   Order Load (0.4ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:41:31.285240 #3021] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:41:31.291712 #3021] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:41:31.293623 #3021] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:41:31.295658 #3021] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:41:31.297895 #3021] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:41:31.300682 #3021] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:41:31.302244 #3021] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
-D, [2022-03-24T10:41:31.303665 #3021] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
-D, [2022-03-24T10:41:31.304892 #3021] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
-D, [2022-03-24T10:41:31.305926 #3021] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
-D, [2022-03-24T10:41:31.306940 #3021] DEBUG -- :   OrderItem Load (0.3ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
-D, [2022-03-24T10:41:31.308084 #3021] DEBUG -- :   OrderItem Load (0.3ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
-D, [2022-03-24T10:41:31.309156 #3021] DEBUG -- :   OrderItem Load (0.3ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
-D, [2022-03-24T10:41:31.310666 #3021] DEBUG -- :   Category Load (0.5ms)  SELECT `categories`.* FROM `categories`
-D, [2022-03-24T10:41:31.325959 #3021] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 1
-D, [2022-03-24T10:41:31.327260 #3021] DEBUG -- :    (0.4ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 2
-D, [2022-03-24T10:41:31.329200 #3021] DEBUG -- :    (0.8ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 3
-D, [2022-03-24T10:41:31.331522 #3021] DEBUG -- :    (1.0ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 4
-D, [2022-03-24T10:41:31.333227 #3021] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 6
+D, [2022-03-30T14:00:23.192036 #4400] DEBUG -- :   Order Load (0.7ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-30T14:00:23.217992 #4400] DEBUG -- :   OrderItem Load (1.3ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-30T14:00:23.224676 #4400] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-30T14:00:23.226755 #4400] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
+D, [2022-03-30T14:00:23.228746 #4400] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2022-03-30T14:00:23.230641 #4400] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+D, [2022-03-30T14:00:23.232826 #4400] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+D, [2022-03-30T14:00:23.235375 #4400] DEBUG -- :   Order Load (1.1ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-30T14:00:23.237365 #4400] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-30T14:00:23.238980 #4400] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-30T14:00:23.240410 #4400] DEBUG -- :   OrderItem Load (0.5ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
+D, [2022-03-30T14:00:23.242451 #4400] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2022-03-30T14:00:23.244545 #4400] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+D, [2022-03-30T14:00:23.246293 #4400] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+D, [2022-03-30T14:00:23.247970 #4400] DEBUG -- :   Category Load (0.6ms)  SELECT `categories`.* FROM `categories`
+D, [2022-03-30T14:00:23.263817 #4400] DEBUG -- :    (0.8ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 1
+D, [2022-03-30T14:00:23.265579 #4400] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 2
+D, [2022-03-30T14:00:23.266972 #4400] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 3
+D, [2022-03-30T14:00:23.268249 #4400] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 4
+D, [2022-03-30T14:00:23.269667 #4400] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 6
+D, [2022-03-30T14:00:23.271709 #4400] DEBUG -- :   Client Load (0.7ms)  SELECT `clients`.* FROM `clients`
+D, [2022-03-30T14:00:23.285454 #4400] DEBUG -- :   Client Load (0.6ms)  SELECT `clients`.* FROM `clients`
+D, [2022-03-30T14:00:23.287980 #4400] DEBUG -- :    (0.7ms)  SELECT COUNT(*) FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2022-03-30T14:00:23.289510 #4400] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `orders` WHERE `orders`.`client_id` = 2
+D, [2022-03-30T14:00:23.291241 #4400] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `orders` WHERE `orders`.`client_id` = 4
+D, [2022-03-30T14:00:23.292916 #4400] DEBUG -- :   Client Load (0.8ms)  SELECT `clients`.* FROM `clients`
+D, [2022-03-31T09:09:19.857579 #303] DEBUG -- :   Order Load (2.9ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-31T09:09:19.896894 #303] DEBUG -- :   OrderItem Load (1.1ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-31T09:09:19.903715 #303] DEBUG -- :   OrderItem Load (0.8ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-31T09:09:19.905690 #303] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
+D, [2022-03-31T09:09:19.907606 #303] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2022-03-31T09:09:19.909833 #303] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+D, [2022-03-31T09:09:19.911517 #303] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+D, [2022-03-31T09:09:19.912918 #303] DEBUG -- :   Order Load (0.6ms)  SELECT `orders`.* FROM `orders`
+D, [2022-03-31T09:09:19.915453 #303] DEBUG -- :   OrderItem Load (1.1ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 2
+D, [2022-03-31T09:09:19.917729 #303] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 1
+D, [2022-03-31T09:09:19.919019 #303] DEBUG -- :   OrderItem Load (0.4ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 3
+D, [2022-03-31T09:09:19.920482 #303] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 4
+D, [2022-03-31T09:09:19.922138 #303] DEBUG -- :   OrderItem Load (0.7ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 5
+D, [2022-03-31T09:09:19.923731 #303] DEBUG -- :   OrderItem Load (0.6ms)  SELECT `order_items`.* FROM `order_items` WHERE `order_items`.`order_id` = 6
+D, [2022-03-31T09:09:19.925356 #303] DEBUG -- :   Category Load (0.6ms)  SELECT `categories`.* FROM `categories`
+D, [2022-03-31T09:09:19.955514 #303] DEBUG -- :    (0.9ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 1
+D, [2022-03-31T09:09:19.957277 #303] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 2
+D, [2022-03-31T09:09:19.958898 #303] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 3
+D, [2022-03-31T09:09:19.960221 #303] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 4
+D, [2022-03-31T09:09:19.961745 #303] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `products` WHERE `products`.`category_id` = 6
+D, [2022-03-31T09:09:19.963534 #303] DEBUG -- :   Client Load (0.8ms)  SELECT `clients`.* FROM `clients`
+D, [2022-03-31T09:09:20.000314 #303] DEBUG -- :   Client Load (0.6ms)  SELECT `clients`.* FROM `clients`
+D, [2022-03-31T09:09:20.002676 #303] DEBUG -- :    (0.9ms)  SELECT COUNT(*) FROM `orders` WHERE `orders`.`client_id` = 1
+D, [2022-03-31T09:09:20.004365 #303] DEBUG -- :    (0.6ms)  SELECT COUNT(*) FROM `orders` WHERE `orders`.`client_id` = 2
+D, [2022-03-31T09:09:20.005962 #303] DEBUG -- :    (0.5ms)  SELECT COUNT(*) FROM `orders` WHERE `orders`.`client_id` = 4
+D, [2022-03-31T09:09:20.007364 #303] DEBUG -- :   Client Load (0.5ms)  SELECT `clients`.* FROM `clients`
